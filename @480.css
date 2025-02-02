@@ -1,0 +1,130 @@
+@media screen and (max-width: 480px) {
+    :root{
+        --icon-size: 14px;
+        --header-icon-color: #000000;
+    }
+    .header{
+        height: 40px;
+    }
+    #open-nav{
+        font-size: 20px;
+    }
+    #brand-name{
+        font-size: 22px;
+    }
+    #header-space{
+        display: block;
+        flex: 1;
+    }
+    #account-wrapper{
+        gap: 12px;
+    }
+    #account{
+        font-size: var(--icon-size);
+        color: var(--header-icon-color);
+        cursor: pointer;
+    }
+    #cart{
+        font-size: var(--icon-size);
+        color: var(--header-icon-color);
+        cursor: pointer;
+    }
+    .owner{
+        height: 20px;
+    }
+    #owner{
+        font-size: 10px;
+    }
+    .top-nav{
+        padding: 6px;
+        gap: 32px;
+        margin-top: 6px;
+    }
+    .top-nav span{
+        font-size: 10px;
+    }
+    .charity{
+        gap: 6px;
+        background-color: var(--header-color);
+    }
+    .charity h2{
+        font-size: 14px;
+    }
+    .charity h3{
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+    }
+    #charity-btn{
+        padding: 6px;
+        background-color: #A594F9;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    #product-details{
+        height: 40px;
+        width: 160px;
+    }
+    #product-wrapper h3, #product-wrapper h4{
+        font-size: 10px;
+    }
+    #product1, #product2, #product3, #product4, 
+    #product5, #product6, #product7, #product8{
+        height: 160px;
+        width: 160px;
+    }
+    .mission{
+        gap: 12px;
+        margin-bottom: 12px;
+        background-color: var(--header-color);
+    }
+    .mission div{
+        height: auto;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px;
+    }
+    .mission div img{
+        height: 30px;
+        width: 30px;
+    }
+    .mission div h3{
+        font-size: 10px;
+    }
+    .footer{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+        background-color: var(--header-icon-color);
+    }
+    .footer div{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+        padding: 12px;
+        gap: 10px;
+    }
+    .footer div h3{
+        font-size: 12px;
+    }
+    .footer div a{
+        font-size: 10px;
+    }
+    .credit{
+        padding: 6px;
+    }   
+    .credit h3{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-bg-color: #ffffff;
+    --main-font-color: #000000;
+    --header-color: #E5D9F2;
+    --main-font-size: 0.9rem;
+    --icon-size: 20px;
+    --header-icon-color: #000000;
+    --product-font-color: #A594F9;
+}
+/*header*/
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+#open-nav{
+    font-size: 32px;
+    color: var(--header-icon-color);
+    margin-left: 24px;
+    cursor: pointer;
+}
+#brand-name{
+    color: var(--main-font-color);
+    font-size: 38px;
+    font-family: "Pacifico", serif;
+    cursor: pointer;
+    padding-left: 24px;
+}
+#account-wrapper{
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+#account{
+    font-size: var(--icon-size);
+    color: var(--header-icon-color);
+    cursor: pointer;
+}
+#cart{
+    font-size: var(--icon-size);
+    color: var(--header-icon-color);
+    cursor: pointer;
+}
+.owner{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+#owner{
+    color: var(--header-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: var(--main-font-size);
+    letter-spacing: 6px;
+}
+.top-nav{
+    padding: 12px;
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    margin-block: 12px;
+}
+.top-nav span{
+    color: var(--product-font-color);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*charity*/
+.charity{
+    height: auto;
+    width: 92.5%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 12px;
+    background-color: var(--header-color);
+}
+.charity h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.charity h3{
+    font-size: var(--main-font-size);
+    font-weight: normal;
+}
+#charity-btn{
+    padding: 8px;
+    background-color: #A594F9;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: var(--main-font-size);
+}
+/*prod*/
+.img-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+}
+#img-wrapper{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+#product-wrapper{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    text-align: center;
+}
+#product-wrapper h3{
+    font-size: var(--main-font-size);
+    color: var(--header-icon-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#product-wrapper h4{
+    font-size: var(--main-font-size);
+    color: var(--product-font-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#product1{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/child-o-god.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product1:hover{
+    background-image: url("assets/child-o-god-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product2{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/fruit-o-spirit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product2:hover{
+    background-image: url("assets/fruit-o-spirit-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product3{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/grace-upon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product3:hover{
+    background-image: url("assets/grace-upon-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product4{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/god-always.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product4:hover{
+    background-image: url("assets/god-always-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product5{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/living-water.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product5:hover{
+    background-image: url("assets/living-water-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product6{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/hold-it.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product6:hover{
+    background-image: url("assets/hold-it-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product7{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/peace-o-god.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product7:hover{
+    background-image: url("assets/peace-o-god-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#product8{
+    height: 300px;
+    width: 300px;
+    background-image: url("assets/disciples.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#product8:hover{
+    background-image: url("assets/disciples-h.png");
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.mission{
+    height: auto;
+    width: 92.5%;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 24px;
+    margin-bottom: 12px;
+    background-color: var(--header-color);
+}
+.mission div{
+    height: auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+}
+.mission div img{
+    height: 60px;
+    width: 60px;
+}
+.mission div h3{
+    font-size: var(--main-font-size);
+    font-weight: normal;
+    text-align: center;
+}
+.footer{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: var(--header-icon-color);
+}
+.footer div{
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid #ffffff;
+    padding: 24px;
+    gap: 18px;
+    color: var(--product-font-color);
+}
+.footer div h3{
+    font-size: 18px;
+}
+.footer div a{
+    font-size: var(--main-font-size);
+    color: var(--header-color);
+}
+.credit{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: var(--header-color);
+}   
+.credit h3{
+    font-size: var(--main-font-size);
+    font-weight: 600;
+}
+
+
+
