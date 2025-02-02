@@ -33,11 +33,11 @@
         height: 20px;
     }
     #owner{
-        font-size: 10px;
+        font-size: 6px;
     }
     .top-nav{
         padding: 6px;
-        gap: 32px;
+        gap: 12px;
         margin-top: 6px;
     }
     .top-nav span{
@@ -103,26 +103,39 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 12px;
+        padding: 6px;
         background-color: var(--header-icon-color);
     }
-    .footer div{
+    #f-follow, #f-brand, #f-customer{
         width: 90%;
         align-items: center;
         justify-content: center;
         border-right: none;
         border-bottom: 1px solid #ffffff;
-        padding: 12px;
+        padding: 6px;
         gap: 10px;
     }
-    .footer div h3{
-        font-size: 12px;
+    #f-help{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        gap: 10px;
     }
-    .footer div a{
+    #f-follow h3, #f-brand h3, #f-customer h3, #f-help h3{
+        font-size: 12px;
+        font-weight: normal;
+    }
+    #afollow, #abrand, #acare, #ahelp{
+        display: none;
+        padding-top: 6px;
+    }
+    #afollow a, #abrand a, #acare a, #ahelp a{
         font-size: 10px;
+        text-align: center;
     }
     .credit{
-        padding: 6px;
+        padding: 8px;
     }   
     .credit h3{
         font-size: 10px;

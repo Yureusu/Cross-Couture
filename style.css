@@ -307,7 +307,7 @@
     padding: 12px;
     background-color: var(--header-icon-color);
 }
-.footer div{
+#f-follow, #f-brand, #f-customer{
     height: auto;
     flex: 1;
     display: flex;
@@ -315,13 +315,29 @@
     justify-content: flex-start;
     border-right: 1px solid #ffffff;
     padding: 24px;
-    gap: 18px;
     color: var(--product-font-color);
 }
-.footer div h3{
+#f-help{
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px;
+    color: var(--product-font-color);
+}
+#f-follow h3, #f-brand h3, #f-customer h3, #f-help h3{
     font-size: 18px;
 }
-.footer div a{
+#afollow, #abrand, #acare, #ahelp{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 18px;
+    padding-top: 18px;
+}
+#afollow a, #abrand a, #acare a, #ahelp a{
     font-size: var(--main-font-size);
     color: var(--header-color);
 }
