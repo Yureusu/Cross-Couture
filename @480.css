@@ -108,19 +108,12 @@
         padding: 6px;
         background-color: var(--header-icon-color);
     }
-    #f-follow, #f-brand, #f-customer{
+    #f-follow, #f-brand, #f-customer, #f-help{
         width: 90%;
         align-items: center;
         justify-content: center;
         border-right: none;
-        border-bottom: 1px solid #ffffff;
-        padding: 6px;
-        gap: 10px;
-    }
-    #f-help{
-        width: 90%;
-        align-items: center;
-        justify-content: center;
+        border-top: 1px solid #ffffff;
         padding: 6px;
         gap: 10px;
     }
@@ -142,4 +135,77 @@
     .credit h3{
         font-size: 10px;
     }
+
+    .footer-nav{
+        flex-direction: column;
+        padding: 6px;
+        padding-bottom: 0px;
+    }
+    #news-letter{
+        height: auto;
+        width: 90%;
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 6px;
+    }
+    #news-letter h3{
+        font-size: 10px;
+        font-weight: normal;
+    }
+    #input-field{
+        gap: 3px;
+    }
+    #input-field input{
+        padding: 4px;
+        font-size: 8px;
+    }
+    #input-field input::placeholder{
+        font-size: 8px;
+    }
+    #input-field span{
+        font-size: 8px;
+        padding: 4px;
+    }
+    #news-letter h4{
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+    }
+    
+    #cross-couture-about{
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 6px;
+        border-top: 1px solid white;
+    }
+    #cross-couture-about h3{
+        font-size: 10px;
+        font-weight: normal;
+    }
+    #about-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+    }
+    #about-wrapper img{
+        height: 60px;
+        width: 60px;
+    }
+    #about-wrapper h1{
+        font-size: 16px;
+    }
+    #cross-couture-about h4{
+        font-weight: normal;
+        text-align: center;
+        font-size: 10px;
+    }
+    
 }
