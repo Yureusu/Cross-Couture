@@ -137,6 +137,7 @@
     }
 
     .footer-nav{
+        height: auto;
         flex-direction: column;
         padding: 6px;
         padding-bottom: 0px;
