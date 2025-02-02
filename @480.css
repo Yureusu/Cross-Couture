@@ -33,12 +33,12 @@
         height: 20px;
     }
     #owner{
-        font-size: 10px;
+        font-size: 6px;
     }
     .top-nav{
         padding: 6px;
         gap: 18px;
-        margin-top: 6px;
+        margin-block: 6px;
     }
     .top-nav span{
         font-size: 10px;
@@ -123,7 +123,7 @@
         gap: 10px;
     }
     #f-follow h3, #f-brand h3, #f-customer h3, #f-help h3{
-        font-size: 12px;
+        font-size: 10px;
         font-weight: normal;
     }
     #afollow, #abrand, #acare, #ahelp{
