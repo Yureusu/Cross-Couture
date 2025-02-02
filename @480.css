@@ -8,6 +8,7 @@
     }
     #open-nav{
         font-size: 20px;
+        margin-left: 12px;
     }
     #brand-name{
         font-size: 22px;
@@ -18,6 +19,7 @@
     }
     #account-wrapper{
         gap: 12px;
+        margin-right: 12px;
     }
     #account{
         font-size: var(--icon-size);
