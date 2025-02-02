@@ -37,8 +37,8 @@
     }
     .top-nav{
         padding: 6px;
-        gap: 12px;
         margin-top: 6px;
+        justify-content: space-between;
     }
     .top-nav span{
         font-size: 10px;
