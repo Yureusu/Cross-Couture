@@ -62,7 +62,7 @@
 }
 #brand-name{
     color: var(--main-font-color);
-    font-size: 38px;
+    font-size: 48px;
     font-family: "Pacifico", serif;
     cursor: pointer;
     padding-left: 24px;
@@ -84,22 +84,31 @@
     color: var(--header-icon-color);
     cursor: pointer;
 }
-.owner{
+.sale{
     height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background-color: #000000;
+    justify-content: flex-start;
+    background-color: #000;
+    gap: 24px;
 }
-#owner{
+#sale{
     color: var(--header-color);
     text-transform: uppercase;
     cursor: pointer;
     font-size: var(--main-font-size);
     letter-spacing: 6px;
+    font-weight: bold;
+    animation: LeftToRight 2s infinite linear reverse;
 }
+@keyframes LeftToRight {
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
 .top-nav{
     padding: 12px;
     display: flex;
@@ -425,7 +434,6 @@
     font-weight: normal;
     color: var(--header-color);
 }
-
 #cross-couture-about{
     height: auto;
     flex: 1;
@@ -460,7 +468,7 @@
     color: var(--header-color);
     font-weight: normal;
 }
-
+/*credit*/
 .credit{
     height: auto;
     width: 100%;
