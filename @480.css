@@ -137,6 +137,7 @@
     }
 
     .footer-nav{
+        height: auto;
         flex-direction: column;
         padding: 6px;
         padding-bottom: 0px;
@@ -144,7 +145,6 @@
     #news-letter{
         height: auto;
         width: 90%;
-        border-right: none;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -162,6 +162,7 @@
     #input-field input{
         padding: 4px;
         font-size: 8px;
+        width: 120px;
     }
     #input-field input::placeholder{
         font-size: 8px;
@@ -174,6 +175,7 @@
         font-size: 10px;
         font-weight: normal;
         text-align: center;
+        padding-bottom: 6px;
     }
     
     #cross-couture-about{
@@ -183,6 +185,7 @@
         align-items: center;
         gap: 12px;
         padding: 6px;
+        border-left: none;
         border-top: 1px solid white;
     }
     #cross-couture-about h3{

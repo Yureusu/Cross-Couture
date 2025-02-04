@@ -146,7 +146,7 @@
 }
 /*prod*/
 .img-container{
-    min-height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -381,9 +381,8 @@
     background-color: black;
 }
 #news-letter{
-    height: 320px;
+    height: auto;
     flex: 1;
-    border-right: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -428,12 +427,13 @@
 }
 
 #cross-couture-about{
-    height: 320px;
+    height: auto;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    border-left: 1px solid white;
     color: var(--header-color);
     gap: 12px;
     padding: 24px;
