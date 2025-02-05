@@ -9,8 +9,6 @@ window.addEventListener("load", () => {
     });
 });
 
-
-
 function openNav(){
     const sideNav = document.getElementById("side-nav");
     sideNav.style.width = "100%";
@@ -36,13 +34,17 @@ function closeUser(){
 
 function openCart(){
     const checkCart = document.getElementById("open-cart");
-    checkCart.style.width = "250px";
+    checkCart.style.width = "100%";
     checkCart.style.right = "0";
+    const cartWrapper = document.getElementById("open-cart-wrapper");
+    cartWrapper.style.boxShadow = "0 0 0 100vmax rgba(0, 0, 0, .5)";
 }
 function closeCart(){
     const checkCart = document.getElementById("open-cart");
     checkCart.style.width = "0%";
     checkCart.style.right = "-250px";
+    const cartWrapper = document.getElementById("open-cart-wrapper");
+    cartWrapper.style.boxShadow = "none";
 }
 
 

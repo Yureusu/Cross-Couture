@@ -22,16 +22,15 @@
     height: 550px;
     width: 550px;
     background-color: var(--w-bg-color);
-    opacity: none;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 }
-#close-user{
+#close-user i{
     font-size:32px;
     cursor: pointer;
     margin-top: -14px;
     margin-right: -10px;
     align-self: flex-end;
 }
-#close-user:hover{
+#close-user i:hover{
     color: var(--purp-font-color);
 }

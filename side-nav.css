@@ -21,13 +21,12 @@
     justify-content: flex-start;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
-#close-nav{
+#close-nav i{
     font-size: 34px;
     cursor: pointer;
-    margin-top: -10px;
+    color: var(--b-bg-color);
 }
-#close-nav:hover{
+#close-nav i:hover{
     color: var(--purp-font-color);
 }

@@ -7,10 +7,9 @@
         width: 42px;
         height: 42px;
         border: 6px solid var(--header-color);
-        border-top-color: var(--product-font-color);
-        border-radius: 50%;
-        box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .6), 0 0 0 100vmax rgba(0, 0, 0, .6);
-        animation: loading 0.75s ease infinite;
+    }
+    body{
+        overflow-x: hidden;
     }
     .header{
         height: 40px;
@@ -229,10 +228,7 @@
         font-size: 10px;
     }
     /*side-nav*/
-    #side-nav{
-        padding: 12px;
-    }
-    #close-nav{
-        font-size: 18px;
+    #closenav-btn{
+        font-size: 14px;
     }
 }
