@@ -6,15 +6,20 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --main-bg-color: #ffffff;
-    --main-font-color: #000000;
-    --header-color: #E5D9F2;
+    --w-bg-color: #fff;
+    --b-bg-color: #000;
+    --w-font-color: #fff;
+    --b-font-color: #000;
+    --main-font-color: #E5D9F2;
+    --purp-font-color: #A594F9;
     --main-font-size: 0.9rem;
     --icon-size: 20px;
-    --header-icon-color: #000000;
-    --product-font-color: #A594F9;
 }
 /*loader*/
+body{
+    background-color: var(--w-bg-color);
+    overflow-x: hidden;
+}
 .loader{
     position: fixed;
     top: 0;
@@ -33,8 +38,8 @@
     content: "";
     width: 78px;
     height: 78px;
-    border: 12px solid var(--header-color);
-    border-top-color: var(--product-font-color);
+    border: 12px solid var(--main-font-color);
+    border-top-color: var(--purp-font-color);
     border-radius: 50%;
     box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .6), 0 0 0 100vmax rgba(0, 0, 0, .6);
     animation: loading 0.75s ease infinite;
@@ -47,7 +52,7 @@
 .header{
     height: 80px;
     width: 100%;
-    background-color: var(--header-color);
+    background-color: var(--main-font-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,12 +61,16 @@
 }
 #open-nav{
     font-size: 32px;
-    color: var(--header-icon-color);
+    color: var(--b-font-color);
     margin-left: 24px;
     cursor: pointer;
 }
+#open-nav:hover{
+    color: var(--purp-font-color);
+    transition: 0.3s ease-in-out;
+}
 #brand-name{
-    color: var(--main-font-color);
+    color: var(--b-font-color);
     font-size: 48px;
     font-family: "Pacifico", serif;
     cursor: pointer;
@@ -76,13 +85,21 @@
 }
 #account{
     font-size: var(--icon-size);
-    color: var(--header-icon-color);
+    color: var(--b-font-color);
     cursor: pointer;
+}
+#account:hover{
+    color: var(--purp-font-color);
+    transition: 0.3s ease-in-out;
 }
 #cart{
     font-size: var(--icon-size);
-    color: var(--header-icon-color);
+    color: var(--b-font-color);
     cursor: pointer;
+}
+#cart:hover{
+    color: var(--purp-font-color);
+    transition: 0.3s ease-in-out;
 }
 .sale{
     height: 40px;
@@ -91,12 +108,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background-color: #000;
+    background-color: var(--b-bg-color);
     gap: 24px;
     overflow-x: hidden;
 }
 #sale{
-    color: var(--header-color);
+    color: var(--w-font-color);
     text-transform: uppercase;
     cursor: pointer;
     font-size: var(--main-font-size);
@@ -109,21 +126,26 @@
         transform: translateX(calc(-100% - 20px));
     }
 }
-
 .top-nav{
-    padding: 12px;
     display: flex;
     flex-wrap: row;
     align-items: center;
     justify-content: center;
     gap: 64px;
     margin-block: 12px;
+    padding: 6px;
 }
 .top-nav span{
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    padding: 6px;
+}
+.top-nav span:hover{
+    color: var(--w-font-color);
+    background-color: var(--purp-font-color);
+    transition: 0.3s ease-in-out;
 }
 /*charity*/
 .charity{
@@ -136,7 +158,7 @@
     justify-content: center;
     justify-self: center;
     gap: 12px;
-    background-color: var(--header-color);
+    background-color: var(--main-font-color);
 }
 .charity h2{
     font-size: 24px;
@@ -149,8 +171,8 @@
 }
 #charity-btn{
     padding: 8px;
-    background-color: #A594F9;
-    color: #ffffff;
+    background-color: var(--purp-font-color);
+    color: var(--w-font-color);
     cursor: pointer;
     font-size: var(--main-font-size);
 }
@@ -188,14 +210,14 @@
 }
 #product-wrapper h3{
     font-size: var(--main-font-size);
-    color: var(--header-icon-color);
+    color: var(--b-font-color);
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
 }
 #product-wrapper h4{
     font-size: var(--main-font-size);
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
@@ -315,7 +337,7 @@
     justify-self: center;
     gap: 24px;
     margin-bottom: 12px;
-    background-color: var(--header-color);
+    background-color: var(--main-font-color);
 }
 .mission div{
     height: auto;
@@ -333,6 +355,7 @@
 }
 .mission div h3{
     font-size: var(--main-font-size);
+    color: var(--b-font-color);
     font-weight: normal;
     text-align: center;
 }
@@ -344,7 +367,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px;
-    background-color: var(--header-icon-color);
+    background-color: var(--b-bg-color);
 }
 #f-follow, #f-brand, #f-customer{
     height: auto;
@@ -352,9 +375,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid var(--w-font-color);
     padding: 24px;
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
 }
 #f-help{
     height: auto;
@@ -363,7 +386,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 24px;
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
 }
 #f-follow h3, #f-brand h3, #f-customer h3, #f-help h3{
     font-size: 18px;
@@ -377,7 +400,11 @@
 }
 #afollow a, #abrand a, #acare a, #ahelp a{
     font-size: var(--main-font-size);
-    color: var(--header-color);
+    color: var(--main-font-color);
+}
+#afollow a:hover, #abrand a:hover, #acare a:hover, #ahelp a:hover{
+    color: var(--w-font-color);
+    transition: 0.3s ease-in-out;
 }
 /*Newsletter*/
 .footer-nav{
@@ -388,7 +415,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--b-bg-color);
 }
 #news-letter{
     height: auto;
@@ -397,13 +424,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color: var(--header-color);
+    color: var(--main-font-color);
     gap: 12px;
     padding: 24px;
 }
 #news-letter h3{
     font-size: 18px;
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
 }
 #input-field{
     display: flex;
@@ -414,26 +441,25 @@
 #input-field input{
     border: none;
     outline: none;
-    background-color: var(--header-color);
+    background-color: var(--main-font-color);
     padding: 6px;
     width: 240px;
 }
 #input-field input::placeholder{
     font-size: 12px;
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
 }
 #input-field span{
-    background-color: var(--header-color);
-    color: var(--main-bg-color);
+    background-color: var(--purp-font-color);
+    color: var(--w-font-color);
     font-size: 12px;
     padding: 7px;
     cursor: pointer;
-    background-color: var(--product-font-color);
 }
 #news-letter h4{
     font-size: var(--main-font-size);
     font-weight: normal;
-    color: var(--header-color);
+    color: var(--main-font-color);
 }
 #cross-couture-about{
     height: auto;
@@ -442,14 +468,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border-left: 1px solid white;
-    color: var(--header-color);
+    border-left: 1px solid var(--w-font-color);
+    color: var(--main-font-color);
     gap: 12px;
     padding: 24px;
 }
 #cross-couture-about h3{
     font-size: 18px;
-    color: var(--product-font-color);
+    color: var(--purp-font-color);
 }
 #about-wrapper{
     display: flex;
@@ -466,7 +492,7 @@
 }
 #cross-couture-about h4{
     font-size: var(--main-font-size);
-    color: var(--header-color);
+    color: var(--main-font-color);
     font-weight: normal;
 }
 /*credit*/
@@ -478,7 +504,7 @@
     align-items: center;
     justify-content: center;
     padding: 12px;
-    background-color: var(--header-color);
+    background-color: var(--main-font-color);
 }   
 .credit h3{
     font-size: var(--main-font-size);

@@ -57,7 +57,7 @@
     }
     .top-nav{
         padding: 6px;
-        gap: 18px;
+        gap: 6px;
         margin-block: 6px;
     }
     .top-nav span{
@@ -228,5 +228,11 @@
         text-align: center;
         font-size: 10px;
     }
-    
+    /*side-nav*/
+    #side-nav{
+        padding: 12px;
+    }
+    #close-nav{
+        font-size: 18px;
+    }
 }

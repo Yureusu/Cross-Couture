@@ -9,6 +9,44 @@ window.addEventListener("load", () => {
     });
 });
 
+
+
+function openNav(){
+    const sideNav = document.getElementById("side-nav");
+    sideNav.style.width = "100%";
+    sideNav.style.left = "0";
+    const checkCart = document.getElementById("open-cart");
+    checkCart.style.width = "0%";
+    checkCart.style.right = "-250px";
+}
+function closeNav(){
+    const sideNav = document.getElementById("side-nav");
+    sideNav.style.width = "0%";
+    sideNav.style.left = "-250px";
+}
+
+function openUser(){
+    const userPopup = document.getElementById("user-popup");
+    userPopup.style.display = "flex";
+}
+function closeUser(){
+    const userPopup = document.getElementById("user-popup");
+    userPopup.style.display = "none";
+}
+
+function openCart(){
+    const checkCart = document.getElementById("open-cart");
+    checkCart.style.width = "250px";
+    checkCart.style.right = "0";
+}
+function closeCart(){
+    const checkCart = document.getElementById("open-cart");
+    checkCart.style.width = "0%";
+    checkCart.style.right = "-250px";
+}
+
+
+
 function openFfollow(){
     document.getElementById('afollow').style.display = 'flex';
 }

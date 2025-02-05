@@ -7,6 +7,9 @@
     <link rel="icon" type="image/x-icon" href="assets/brand-logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="@480.css">
+    <link rel="stylesheet" href="side-nav.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="cart.css">
     <script src="script.js"></script>
     <script src="signup.js" defer type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +23,23 @@
         <span id="open-nav" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         <a href="" id="brand-name" style="text-decoration: none;">Cross Couture</a>
         <div id="account-wrapper">
-            <span id="account" onclick="createAcc()"><i class="fa-solid fa-user"></i></span>
+            <span id="account" onclick="openUser()"><i class="fa-solid fa-user"></i></span>
             <span id="cart" onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+    </div>
+    <div id="side-nav">
+        <div id="side-nav-wrapper">
+            <span id="close-nav" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+    </div>
+    <div id="user-popup">
+        <div id="user-popup-wrapper">
+            <span id="close-user" onclick="closeUser()"><i class="fa-solid fa-circle-xmark"></i></span>
+        </div>
+    </div>
+    <div id="open-cart">
+        <div id="open-cart-wrapper">
+            <span id="close-cart" onclick="closeCart()"><i class="fa-solid fa-xmark"></i></span>
         </div>
     </div>
     <div class="sale" aria-hidden="true">

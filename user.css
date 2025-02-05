@@ -1,0 +1,37 @@
+#user-popup{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 24px;
+    transition: 0.5s ease-in-out;
+}
+#user-popup-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 550px;
+    width: 550px;
+    background-color: var(--w-bg-color);
+    opacity: none;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+}
+#close-user{
+    font-size:32px;
+    cursor: pointer;
+    margin-top: -14px;
+    margin-right: -10px;
+    align-self: flex-end;
+}
+#close-user:hover{
+    color: var(--purp-font-color);
+}
