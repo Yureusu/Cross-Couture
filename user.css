@@ -24,13 +24,13 @@
     background-color: var(--w-bg-color);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 }
-#close-user i{
+#close-user{
     font-size:32px;
     cursor: pointer;
     margin-top: -14px;
     margin-right: -10px;
     align-self: flex-end;
 }
-#close-user i:hover{
+#close-user:hover{
     color: var(--purp-font-color);
 }

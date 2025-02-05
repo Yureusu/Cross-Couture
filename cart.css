@@ -26,12 +26,12 @@
     padding: 24px;
     background-color: var(--w-bg-color);
 }
-#close-cart i{
+#close-cart{
     font-size: 28px;
     cursor: pointer;
     margin-top: -6px;
     align-self: flex-end;
 }
-#close-cart i:hover{
+#close-cart:hover{
     color: var(--purp-font-color);
 }
